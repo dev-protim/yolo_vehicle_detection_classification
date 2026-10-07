@@ -1,11 +1,12 @@
-# Real-Time Vehicle Detection with YOLOv4-tiny
+# Real-Time Vehicle Detection on Raspberry Pi (YOLOv4-tiny)
 
-Part of my M.Sc. Applied Computer Science traffic-analysis project
-(Hochschule Schmalkalden) [– final project graded 1.0, ran on a Raspberry Pi].
+Traffic-analysis project from my M.Sc. Applied Computer Science
+(Hochschule Schmalkalden), graded 1.0 (sehr gut).
 
-The app reads a traffic video (or a camera), detects vehicles in every
-frame with YOLOv4-tiny, and streams the annotated video live to the
-browser through a small Flask server.
+Runs on a Raspberry Pi: it reads a traffic video or camera feed,
+detects and classifies vehicles (car, bus, truck, motorbike, …) in each
+frame with YOLOv4-tiny, and streams the annotated video live to any
+browser on the network through a small Flask server.
 
 ## How it works
 1. OpenCV's DNN module loads the YOLOv4-tiny model (COCO classes:
